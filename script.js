@@ -4,7 +4,15 @@
 // - Then uses the .filter() method to return a filtered array of books containing that genre.
 
 //Write filterByGenre(books, genre) below here:
-
+function filterByGenre (books, genre) {
+  let booksarray = books.filter(
+    function (x) {
+        if (genre== x.genre) {
+          return x.genre
+        }
+    })
+    return booksarray
+}
 
 const books = [
   { title: "The Da Vinci Code", author: "Dan Brown", genre: "mystery" },
@@ -19,7 +27,3 @@ const books = [
   {title: "The Big Sleep", author: "Raymond Chandler", genre: "mystery" },
   {title: "Jane Eyre", author: "Charlotte Bronte", genre: "romance" },
 ];
-const filterbyGenre = 'mystery'; 'romance'; 'sci-fi'
-const filteredMovies = movies.filterbyGenre
-console.log(filteredmovies)
-
